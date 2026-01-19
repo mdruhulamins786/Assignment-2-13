@@ -3,11 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Tech Wave</title>
   </head>
-  <body>
-    <h1>Assignment-2</h1>
+
+  <body
+    class="min-h-screen w-screen overflow-x-hidden bg-gradient-to-b from-[#14093A] via-[#1F1154] to-[#0E0626] text-white font-sans"
+  >
+    <!-- Navbar -->
+    <header class="max-w-[1200px] mx-auto">
+      <nav class="flex items-center justify-between p-4">
+        <h1 class="text-3xl font-bold">
+          Tech
+          <span
+            class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent"
+          >
+            Wave
+          </span>
+        </h1>
+
+        <ul class="hidden md:flex gap-8 text-sm text-gray-300">
+          <li><a href="#" class="hover:text-white">About</a></li>
+          <li><a href="#" class="hover:text-white">Episodes</a></li>
+          <li><a href="#" class="hover:text-white">Host</a></li>
+        </ul>
+
+        <button
+          class="hidden md:flex items-center gap-2 rounded-full px-5 py-2 font-semibold bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] hover:from-[#FB09B4] hover:to-[#F7E93F] transition-all duration-300"
+        >
+          Subscribe
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <button class="md:hidden">
+          <img src="./assets/hamburger-menu.png" alt="Menu" class="w-6 h-6" />
+        </button>
+      </nav>
+    </header>
   </body>
 </html>
